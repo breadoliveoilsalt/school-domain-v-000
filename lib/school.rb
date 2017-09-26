@@ -8,20 +8,20 @@ class School
 
   def initialize(name)
     @name = name
-    ROSTER = { }
+    @roster = { }
   end
 
   def add_student(name, grade)
-    if ROSTER[grade] == nil
-      ROSTER[grade] = [ ]
-      ROSTER[grade] << name
+    if [grade] == nil
+      @roster[grade] = [ ]
+      @roster[grade] << name
     else
-      ROSTER[grade] << name
+      @roster[grade] << name
     end
   end
 
   def grade(num)
-    ROSTER[num]
+    @roster[num]
   end
     
 
