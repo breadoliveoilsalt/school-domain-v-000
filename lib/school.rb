@@ -23,6 +23,10 @@ class School
     @roster[num]
   end
 
-binding.pry
+  def sort
+    @roster.each | key, value |
+      value.sort
+    end
+  end
 
 end
