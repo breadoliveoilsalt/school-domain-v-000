@@ -19,4 +19,9 @@ class School
     end
   end
 
+  def grade(num)
+    ROSTER[num]
+  end
+    
+
 end
