@@ -12,5 +12,3 @@ end
 h.collect do | k , v |
   k[v].sort
 end
-
-  
