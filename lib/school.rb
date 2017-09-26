@@ -24,9 +24,11 @@ class School
   end
 
   def sort
-    @roster.each | key, value |
-      value.sort
+    new_hash = { }
+    @roster.each do | key, value |
+      new_hash[key] = value.sort
     end
+    new_hash
   end
 
 end
