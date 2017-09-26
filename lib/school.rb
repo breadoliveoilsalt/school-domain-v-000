@@ -3,14 +3,13 @@ require 'pry'
 
 class School
 
-#  attr_accessor :name,
+  attr_accessor :name, :roster
 
 
 
   def initialize(name)
     @name = name
     @roster = { }
-    binding.pry
   end
 
   def add_student(name, grade)
@@ -26,5 +25,6 @@ class School
     @roster[num]
   end
 
+binding.pry
 
 end
